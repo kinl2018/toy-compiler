@@ -94,7 +94,6 @@ int get_id(char *str) {
 }
 int main(int argc, char const *argv[]) {
 	char filename[100];
-    
     printf("input your filename: ");
     scanf("%s", filename);
 
