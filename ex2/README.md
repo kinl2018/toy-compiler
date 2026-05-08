@@ -19,4 +19,4 @@ flex和bison，详见老师压缩包里的'1必须安装的工具-win_flex_bison
 
 ### Acknowledgement
 
-大部分代码参考自https://github.com/perfsakuya/Compiler_Experiment，本人只做了小小改动，感恩的心！
+大部分代码参考自https://github.com/perfsakuya/Compiler_Experiment ，本人只做了小小改动，感恩的心！
