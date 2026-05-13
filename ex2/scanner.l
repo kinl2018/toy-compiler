@@ -78,7 +78,7 @@ write        return WRITE;
 ":"          return COLON;
 ":="         { filloperator(&yylval, yytext); return ASSIGN; }
 ";"          return SEMI;
-"<"|"<="|">"|">="|"<>"|"="    { filloperator(&yylval, yytext); return( RELOP ); }
+"<"|"<="|">"|">="|"<>"|"="    { filloperator(&yylval, yytext); return RELOP; }
 "["          return LC;
 "]"          return RC;
 
