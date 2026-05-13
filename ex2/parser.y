@@ -35,10 +35,10 @@ int yyerror(char *msg);
 %%
 // <程序> -> program <标识符> ; var <变量定义> begin <语句表> end . | program <标识符> ; begin <语句表> end .
 program : PROGRAM program_name SEMI VAR var_def BEG statement_table END DOT M
-{
-	backpatch(list, $7.nextlist, $10.instr);
-	YYACCEPT;
-}
+		{
+			backpatch(list, $7.nextlist, $10.instr);
+			YYACCEPT;
+		}
 		|PROGRAM program_name SEMI BEG statement_table END DOT M
 		{
 			backpatch(list, $5.nextlist, $8.instr);
